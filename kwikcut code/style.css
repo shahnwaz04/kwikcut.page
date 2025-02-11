@@ -1,0 +1,511 @@
+
+/* <!-- -----------------------------------navbar styling----------------------------------- --> */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(221, 255, 254);
+  }
+  
+
+  .navbar {
+    background-color: rgb(203, 246, 246);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .nav_logo {
+    height: 65px;
+  }
+  
+
+  .logo {
+    background-image: url("assets/new_logo.png");
+    height: 65px;
+    width: 350px;
+    background-size: cover;
+    background-position: center;
+    
+    border: 1.5px solid transparent;
+    }
+  
+  
+  .nav_signin {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+
+  button {
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(156, 238, 238);
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.1s ease;
+    box-shadow: 3px 1px  4px  0.3px #242e2f;
+  }
+  
+
+  button:hover {
+    background-color: #00c1d4;  
+  }
+  
+
+/* -------------------------------------hero section styling---------------------------------------- */
+body{
+    background-color: rgb(221, 255, 254);
+}
+
+.hero_section {
+    position: relative;
+    width: 100%;
+    height: 1024px;
+  }
+  
+  .svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  /* -------------------------------------text-container styling---------------------------------------- */
+  .text-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #033145;
+  }
+  
+  .kwikcut {
+    font-family :'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+   
+  }
+  
+  .para {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #033145;
+  }
+
+
+/* -------------------------------------search-bar styling---------------------------------------- */
+  .SearchBar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 28%;
+    height: 55px;
+    width: 1000px;
+    left: 15%;
+    right: 20%;
+    border-radius: 30px;
+    background-color: rgb(203, 246, 246);
+    padding: 0 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .locIcon {
+    font-size: 25px;
+    color: #033145;
+    justify-content: space-evenly;
+    margin-right: 15px; 
+  }
+  
+
+  .SelectOption select {
+    height: 45px;
+    width: 300px;
+    text-indent: 30px;
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+    font-size: 16px;
+    background-color:rgb(227, 248, 248);
+  }
+
+    
+  .search-icon {
+    background-color:rgb(227, 248, 248) ;
+    font-size: 25px;
+    color: #033145;
+    cursor: pointer;
+    width: 90px;
+    height: 45px;
+    margin-right: 0px;
+    margin-left: 20px;
+    padding-right: 40px;
+    padding-left: 55px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+
+  .SalonSearch input {
+    background-color:rgb(227, 248, 248);
+    height: 45px;
+    width: 410px;
+    border: none;
+    text-indent: 40px;
+    padding: 10 20px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+ 
+  .btn button {
+    height: 45px;
+    width: 120px;
+    border: none;
+    background-color: rgb(0, 193, 212);
+    color: white;
+    border-radius: 0px 20px 20px 0px ;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+
+  .btn button:hover {
+    background-color: rgb(0, 173, 190);
+  }
+  
+  /* -------------------------------------section box styling---------------------------------------- */
+ 
+ 
+
+  .section-1 {
+    /* background-color: yellow; */
+    position: absolute;
+    top: 62%;
+    left: 85px;
+    height: 270px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+
+  .box1 {
+    height: 260px;
+    width: 370px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 20px 20px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+
+  .box1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+
+  .box1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+   
+    border-radius: 20px 20px 0px 0px;
+    transition: transform 0.3s ease;
+  }
+  
+
+  .box1 img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .box1 p {
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    background-color: #5fe7f1;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px; 
+  }
+  
+ 
+
+  /* <!-- -----------------------------------------Get app button styling---------------------------------------------- --> */
+  .mainScanner{
+    background-color: rgb(186, 245, 249);
+    height: 50px;
+    width: 200px;
+    overflow: hidden;
+    box-shadow: 3px 1px  4px  0.3px #242e2f;
+    font-weight: bold;
+    position: absolute;
+    top: 130%;
+    left: 45%;
+    right: 40%;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+ 
+
+  .get{
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .get p{
+    color: black;
+    font-weight: bold;
+  }
+
+
+  .scan{
+    position: absolute;
+    background-color: blue;
+    left: 75%;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+  }
+
+
+  .scan img{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 50px
+  }
+
+
+
+/* <!-- -----------------------------------------section-2styling----------------------------------------------  */
+.section-2{  
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  height:355px;
+  width: 100%;
+}
+.recomended{
+  padding-top: 10px;
+  padding-left: 110px;
+  padding-bottom: 10px;
+}
+
+
+.recomended p{
+  color: rgb(23, 21, 21);
+  padding: 5px;
+}
+
+
+.section-2 h2{
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+
+.box2{
+  height: 350px;
+  width: 20%;
+  border: none;
+}
+
+
+/* .box2 :hover{
+  transform: scale(1.30);
+  transition: 1s;
+} */
+
+.Name {
+  background-color: #93e9e8;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.Name p{
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+ 
+.box2 img{
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px 20px 0px 0px;
+  transition: transform 0.3s ease;
+}
+
+ 
+
+/* <!-- -----------------------------------------section-3 styling----------------------------------------------  */
+
+.section-3{
+  display: flex;
+  justify-content: center;
+  position:absolute;
+  top: 15%;
+  gap: 24px; 
+  height: 355px;
+  width: 100%; 
+}
+
+
+.Trending{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 110px;
+  padding-bottom: 10px;
+}
+
+
+.Trending p{
+  color: rgb(23, 21, 21);
+  padding: 5px;
+}
+
+
+.section-3 h2{
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+
+.box-3{
+  height: 350px;
+  width: 20%;
+  border: none;
+}
+
+
+/* <!-- -----------------------------------------section-4 styling----------------------------------------------  */
+
+ .section-4{
+  position: absolute;
+  top: 60%;
+  height: 355px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;  
+}
+
+
+.NewShop{ 
+  top: 55%;
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 110px;
+  padding-bottom: 10px; 
+}
+
+
+.NewShop p{
+  color: rgb(23, 21, 21);
+  padding: 5px;
+  padding-bottom: 5px;
+}
+
+
+.section-4 h2{
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+
+.box3{
+  display: flex;
+  height:350px;
+  width: 20%;
+  border: none;
+} 
+
+
+.box2 img:hover {
+  transform: scale(1.1);
+}
+
+
+/* <!-- -----------------------------------------phone prototype styling----------------------------------------------  */
+ 
+.phoneSection{
+  display: flex;
+  justify-content: center;
+  
+  top: 5%;
+  background-color: yellow;
+  position: absolute;
+  height: 700px;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  gap: 20px;
+}
+
+.phone{
+background-color: #5fe7f1;
+height: 500px;
+width: 60%;
+gap: 20px;
+}
+
+.TextArea{
+  background-color: black;
+  height: 500px;
+  width: 70%;
+
+}
+.TextArea h1{
+  color: green;
+}
